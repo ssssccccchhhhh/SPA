@@ -1,14 +1,14 @@
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
     this.setTitle("Settings");
   }
 
   async getHtml() {
     return `
-        <h1>Posts</h1>
+        <h1>Settings</h1>
         <p>
             Manage your privacy and configuration.
         </p>
